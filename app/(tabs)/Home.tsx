@@ -10,6 +10,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 import { data } from '../../data';
+import AirDrops from 'components/home/airdrops-cards';
 
 export const ActionButtonsData = [
   { id: 1, title: 'Deposit', icon: Plus },
@@ -140,6 +141,7 @@ const Home = () => {
             );
           })}
         </View>
+        <AirDrops />
       </View>
     </ScrollView>
   );

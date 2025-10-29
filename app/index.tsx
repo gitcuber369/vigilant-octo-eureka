@@ -1,11 +1,6 @@
-import { router } from 'expo-router';
-import { useEffect } from 'react';
-import { View } from 'react-native';
+import { Redirect } from 'expo-router';
 
 export default function Index() {
-  useEffect(() => {
-    router.replace('/Home');
-  }, []);
-
-  return <View />;
+  // Use a declarative Redirect so navigation happens after layout mounts.
+  return <Redirect href="/(tabs)/Home" />;
 }
